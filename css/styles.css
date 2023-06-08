@@ -113,6 +113,9 @@ img {
 
 .header {
   border-bottom: 1px solid var(--cornflower-color);
+  box-shadow: 0px 1px 6px 0px #2e2f4214;
+  box-shadow: 0px 1px 1px 0px #2e2f4229;
+  box-shadow: 0px 2px 1px 0px #2e2f4214;
 }
 
 .header .container {
@@ -187,7 +190,15 @@ img {
 }
 
 .hero {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 188px 0;
+  background: linear-gradient(
+      to left,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/hero-bg-min.png") no-repeat center;
 }
 
 .hero .container {
