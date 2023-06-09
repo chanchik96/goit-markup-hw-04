@@ -333,7 +333,7 @@ img {
   margin-bottom: 8px;
 }
 
-.social-media-list {
+.our-team .social-media-list {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -370,7 +370,6 @@ img {
 }
 
 .customers-list-item {
-  transition: border-color var(--tran-250), color var(--tran-250);
   min-width: calc((100% - 5 * 24px) / 6);
   height: 88px;
 }
@@ -379,7 +378,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: border var(--tran-250);
+  transition: border-color var(--tran-250), color var(--tran-250);
   border: 1px solid var(--light-slate-color);
   border-radius: 4px;
   width: 100%;
@@ -436,11 +435,17 @@ img {
   color: var(--white-color);
 }
 
-.footer-right-col .social-media-link {
+.footer .social-media-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer .social-media-link {
   transition: background-color var(--tran-250);
 }
 
-.footer-right-col .social-media-link:is(:hover, :focus) {
+.footer .social-media-link:is(:hover, :focus) {
   background-color: var(--green-color);
 }
 
@@ -463,7 +468,8 @@ img {
 
 .portfolio .list .button {
   transition: color var(--tran-250), background-color var(--tran-250),
-    box-shadow var(--tran-250), border var(--tran-250);
+    box-shadow var(--tran-250), border-color var(--tran-250),
+    box-shadow var(--tran-250);
   color: var(--iris-color);
   background-color: var(--cloud-color);
   padding: 12px 24px;
@@ -485,12 +491,16 @@ img {
   row-gap: 48px;
 }
 
+.portfolio .card-item {
+  transition: box-shadow var(--tran-250);
+}
+
 .portfolio .overlay-box {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio .overlay {
+.portfolio .overlay-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -522,8 +532,8 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio .card-link:is(:hover, :focus) .overlay {
-  transform: translateY(0);
+.portfolio .card-link:is(:hover, :focus) .overlay-text {
+  transform: translateY(0%);
 }
 
 .portfolio .card-text {
