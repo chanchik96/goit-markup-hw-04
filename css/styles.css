@@ -437,19 +437,19 @@ img {
 
 /* ===== PORTFOLIO Page ===== */
 
-.button-list {
+.portfolio {
+  padding-top: 96px;
+}
+
+.filter-btns-list {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
 }
 
-.button-list-item {
+.filter-btn-item {
   border: none;
-}
-
-.portfolio {
-  padding-top: 96px;
 }
 
 .portfolio .list .button {
