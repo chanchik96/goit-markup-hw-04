@@ -468,8 +468,7 @@ img {
 
 .portfolio .list .button {
   transition: color var(--tran-250), background-color var(--tran-250),
-    box-shadow var(--tran-250), border-color var(--tran-250),
-    box-shadow var(--tran-250);
+    border-color var(--tran-250), box-shadow var(--tran-250);
   color: var(--iris-color);
   background-color: var(--cloud-color);
   padding: 12px 24px;
@@ -491,10 +490,6 @@ img {
   row-gap: 48px;
 }
 
-.portfolio .card-item {
-  transition: box-shadow var(--tran-250);
-}
-
 .portfolio .overlay-box {
   position: relative;
   overflow: hidden;
@@ -510,6 +505,7 @@ img {
   height: 100%;
   padding: 40px 32px;
   background-color: var(--iris-color);
+  color: var(--cloud-color);
 }
 
 .portfolio .wrapper {
@@ -524,6 +520,7 @@ img {
 }
 
 .portfolio .card-link {
+  transition: box-shadow var(--tran-250);
   display: block;
 }
 
